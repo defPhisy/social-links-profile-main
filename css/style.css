@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  /* font */
+  --font-family: "Inter", sans-serif;
+
+  --font-weight-thin: 400;
+  --font-weight-normal: 600;
+  --font-weight-bold: 700;
+
+  /* color */
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-dark-grey: hsl(0, 0%, 12%);
+  --color-off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-off-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link-card {
+  min-width: 450px;
+  margin: 1rem;
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.name {
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  margin-bottom: 2rem;
+  color: var(--color-green);
+  font-weight: var(--font-weight-bold);
+}
+
+.job-title {
+  font-weight: var(--font-weight-thin);
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.social-links a {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-grey);
+  border-radius: 0.5rem;
+}
+
+.social-links a:hover {
+  background-color: var(--color-green);
+  color: var(--color-off-black)
+}
+
+.social-links a:focus {
+  background-color: var(--color-green);
+  color: var(--color-off-black)
+}
+
+/* responsive design */ 
+@media (max-width: 450px) {
+  .social-link-card {
+    min-width: 250px;
+    padding: 1.5rem;
+  }
+}
